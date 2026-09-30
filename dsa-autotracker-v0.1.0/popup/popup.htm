@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DSA AutoTracker</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>DSA AutoTracker</h1>
+
+    <div id="status" class="status">Detecting page...</div>
+
+    <div class="field">
+      <span class="label">Platform</span>
+      <span id="platform">-</span>
+    </div>
+
+    <div class="field">
+      <span class="label">Title</span>
+      <span id="title">-</span>
+    </div>
+
+    <div class="field">
+      <span class="label">My Intuition</span>
+      <textarea id="intuition" rows="5" placeholder="Intuition please..."></textarea>
+    </div>
+
+    <div class="field">
+      <span class="label">URL</span>
+      <span id="url">-</span>
+    </div>
+
+    <div class="field">
+      <span class="label">Status</span>
+      <textarea placeholder="status please..." id="revStatus"></textarea>
+    </div>
+
+    <div class="field">
+      <span class="label">Topics</span>
+      <textarea placeholder="topics please..." id="topics"></textarea>
+    </div>
+
+    <div class="field">
+      <span class="label">Last Revised</span>
+      <input type="date" id="lastRevised">
+    </div>
+
+    <div class="field">
+      <span class="label">Next Revision</span>
+      <input type="date" id="nextRevision">
+    </div>
+
+    <button type="button" id="save">Save to Doc</button>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+
+</html>

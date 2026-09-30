@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "DSA AutoTracker",
+  "version": "0.1.0",
+  "description": "Capture solved LeetCode and GeeksforGeeks problems.",
+  "permissions": [
+    "activeTab",
+    "storage"
+  ],
+  "action": {
+    "default_popup": "popup/popup.htm",
+    "default_title": "DSA AutoTracker"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://leetcode.com/*",
+        "https://www.geeksforgeeks.org/*",
+        "https://geeksforgeeks.org/*"
+      ],
+      "js": [
+        "content/content.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ]
+}
