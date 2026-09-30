@@ -61,3 +61,40 @@ Google Apps Script
        │ doPost(e)
        ▼
 Google Sheet
+
+```
+## 2. Create Your Google Sheet
+
+Create a new Google Sheet that you want to use for tracking your DSA problems.
+
+The sheet should contain the following columns:
+
+- No
+- Title
+- Platform
+- Status
+- Question Link
+- Discussion
+- Topics
+- Last Revised
+- Next Revision
+
+Your Google Sheet should look similar to the following:
+
+![Google Sheet Example](dsa-autotracker-v0.1.0/google-sheet-base-outline.png)
+
+> **Note:** The data shown in the screenshot is only an example. You can start with an empty sheet containing the same column headers.
+
+### Required Column Structure
+
+| Column | Purpose |
+|---|---|
+| No | Automatically generated problem number |
+| Title | Problem title |
+| Platform | LeetCode / GFG |
+| Status | Revision status |
+| Question Link | Link to the original problem |
+| Discussion | Your intuition/thought process |
+| Topics | DSA topics related to the problem |
+| Last Revised | Date you last revised the problem |
+| Next Revision | Date you want to revise it again |
